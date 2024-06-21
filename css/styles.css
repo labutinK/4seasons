@@ -1382,6 +1382,11 @@ ol {
   @media (max-width: 991.92px) {
     .review-modal {
       width: 728px; } }
+@media (max-width: 767.98px){
+  .review-modal{
+    max-width:calc(100% - 20px);
+  }
+}
   .review-modal__title {
     font-size: 24px;
     font-weight: 700;
