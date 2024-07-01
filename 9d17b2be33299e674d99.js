@@ -415,11 +415,13 @@ var FormValidator = /*#__PURE__*/function () {
       if (starsInputs.length) {
         starsInputs.forEach(function (starsInput) {
           var inpFields = starsInput.querySelectorAll('input');
+          var hiddenInp = starsInput.querySelector('input[type="hidden"]');
           var _loop = function _loop(i) {
             inpFields[i].addEventListener('change', function (evt) {
               for (var k = 0; k < inpFields.length; k++) {
                 if (k <= i) {
                   inpFields[k].checked = true;
+                  hiddenInp.value = k;
                 } else {
                   inpFields[k].checked = false;
                 }

@@ -1017,72 +1017,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lk__orders-list orders-list">
-                        <div class="orders-list__title h2">Активные заказы</div>
-                        <div class="orders-list__table orders-table">
-                            <div class="orders-table__title-row order-row">
-                                <div class="order-row__id" data-sort-order="desc">
-                                    №
-                                </div>
-                                <div class="order-row__num" data-sort-order="desc">
-                                    Номер заказа
-                                </div>
-                                <div class="order-row__date" data-sort-order="asc">
-                                    Дата заказа
-                                </div>
-                                <div class="order-row__delivery-date" data-sort-order="asc">
-                                    Дата доставки
-                                </div>
-                                <div class="order-row__delivery-type" data-sort-order="asc">
-                                    Базис доставки
-                                </div>
-                                <div class="order-row__address" data-sort-order="asc">
-                                    Адрес поставки
-                                </div>
-                                <div class="order-row__conditions" data-sort-order="asc">
-                                    Условия оплаты
-                                </div>
-                                <div class="order-row__price" data-sort-order="asc">
-                                    Сумма с НДС
-                                </div>
-                                <div class="order-row__status" data-sort-order="asc">
-                                    Состояние заказа
-                                </div>
-                                <div class="order-row__additional"></div>
+                    <div class="lk__managers lk-managers">
+                        <div class="lk-managers__title-block">
+                            <h2 class="lk-managers__title">Доступ к аккаунту</h2>
+                            <span class="lk-managers__btn btn btn--m btn--blue" data-btn-modal="bdbd2">
+                                <span class="btn__icon">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                             d="M6 0C6.41421 0 6.75 0.335786 6.75 0.75V5.25012H11.25C11.6642 5.25012 12 5.58591 12 6.00012C12 6.41434 11.6642 6.75012 11.25 6.75012H6.75V11.25C6.75 11.6642 6.41421 12 6 12C5.58579 12 5.25 11.6642 5.25 11.25V6.75012H0.75C0.335786 6.75012 0 6.41434 0 6.00012C0 5.58591 0.335786 5.25012 0.75 5.25012H5.25V0.75C5.25 0.335786 5.58579 0 6 0Z"
+                                             fill="#F6F7F8"/>
+                                    </svg>
+                                </span>
+                                <span>Добавить</span>
+                            </span>
+                        </div>
+                        <div class="managers-table">
+                            <div class="managers-row managers-row--title">
+                                <div class="managers-row__id" data-sort-order="asc">№</div>
+                                <div class="managers-row__users" data-sort-order="desc">Пользователи</div>
+                                <div class="managers-row__mail" data-sort-order="asc">Email</div>
+                                <div class="managers-row__date" data-sort-order="asc">Дата регистрации</div>
+                                <div class="managers-row__additional"></div>
                             </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
-                                </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
+                            <div class="managers-row">
+                                <div class="managers-row__id">1</div>
+                                <div class="managers-row__users">
+                                    <div class="manager-in-table">
+                                        <div class="manager-in-table__ava">
+                                            KP
+                                        </div>
+                                        <div class="manager-in-table__info">
+                                            <div class="manager-in-table__name">Константин Редькин</div>
+                                            <div class="manager-in-table__login">redkin01</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="order-row__additional">
+                                <div class="managers-row__mail" data-name="E-mail">redkinko@gmail.com</div>
+                                <div class="managers-row__date" data-name="Дата регистрации">10.07.2023</div>
+                                <div class="managers-row__additional">
                                     <div class="order-settings-box">
                                         <div class="order-settings-box__icon">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -1099,45 +1072,27 @@
                                             </svg>
                                         </div>
                                         <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
+                                            <a href="#">Удалить</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
-                                </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
+                            <div class="managers-row">
+                                <div class="managers-row__id">1</div>
+                                <div class="managers-row__users">
+                                    <div class="manager-in-table">
+                                        <div class="manager-in-table__ava">
+                                            KP
+                                        </div>
+                                        <div class="manager-in-table__info">
+                                            <div class="manager-in-table__name">Константин Редькин</div>
+                                            <div class="manager-in-table__login">redkin01</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="order-row__additional">
+                                <div class="managers-row__mail" data-name="E-mail">redkinko@gmail.com</div>
+                                <div class="managers-row__date" data-name="Дата регистрации">10.07.2023</div>
+                                <div class="managers-row__additional">
                                     <div class="order-settings-box">
                                         <div class="order-settings-box__icon">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -1154,198 +1109,15 @@
                                             </svg>
                                         </div>
                                         <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
-                                </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
-                                    </div>
-                                </div>
-                                <div class="order-row__additional">
-                                    <div class="order-settings-box">
-                                        <div class="order-settings-box__icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.9974 10.832C10.4576 10.832 10.8307 10.4589 10.8307 9.9987C10.8307 9.53846 10.4576 9.16536 9.9974 9.16536C9.53716 9.16536 9.16406 9.53846 9.16406 9.9987C9.16406 10.4589 9.53716 10.832 9.9974 10.832Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 4.9987C10.4576 4.9987 10.8307 4.6256 10.8307 4.16536C10.8307 3.70513 10.4576 3.33203 9.9974 3.33203C9.53716 3.33203 9.16406 3.70513 9.16406 4.16536C9.16406 4.6256 9.53716 4.9987 9.9974 4.9987Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 16.6654C10.4576 16.6654 10.8307 16.2923 10.8307 15.832C10.8307 15.3718 10.4576 14.9987 9.9974 14.9987C9.53716 14.9987 9.16406 15.3718 9.16406 15.832C9.16406 16.2923 9.53716 16.6654 9.9974 16.6654Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                            </svg>
-                                        </div>
-                                        <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
-                                </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
-                                    </div>
-                                </div>
-                                <div class="order-row__additional">
-                                    <div class="order-settings-box">
-                                        <div class="order-settings-box__icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.9974 10.832C10.4576 10.832 10.8307 10.4589 10.8307 9.9987C10.8307 9.53846 10.4576 9.16536 9.9974 9.16536C9.53716 9.16536 9.16406 9.53846 9.16406 9.9987C9.16406 10.4589 9.53716 10.832 9.9974 10.832Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 4.9987C10.4576 4.9987 10.8307 4.6256 10.8307 4.16536C10.8307 3.70513 10.4576 3.33203 9.9974 3.33203C9.53716 3.33203 9.16406 3.70513 9.16406 4.16536C9.16406 4.6256 9.53716 4.9987 9.9974 4.9987Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 16.6654C10.4576 16.6654 10.8307 16.2923 10.8307 15.832C10.8307 15.3718 10.4576 14.9987 9.9974 14.9987C9.53716 14.9987 9.16406 15.3718 9.16406 15.832C9.16406 16.2923 9.53716 16.6654 9.9974 16.6654Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                            </svg>
-                                        </div>
-                                        <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
-                                </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
-                                    </div>
-                                </div>
-                                <div class="order-row__additional">
-                                    <div class="order-settings-box">
-                                        <div class="order-settings-box__icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.9974 10.832C10.4576 10.832 10.8307 10.4589 10.8307 9.9987C10.8307 9.53846 10.4576 9.16536 9.9974 9.16536C9.53716 9.16536 9.16406 9.53846 9.16406 9.9987C9.16406 10.4589 9.53716 10.832 9.9974 10.832Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 4.9987C10.4576 4.9987 10.8307 4.6256 10.8307 4.16536C10.8307 3.70513 10.4576 3.33203 9.9974 3.33203C9.53716 3.33203 9.16406 3.70513 9.16406 4.16536C9.16406 4.6256 9.53716 4.9987 9.9974 4.9987Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 16.6654C10.4576 16.6654 10.8307 16.2923 10.8307 15.832C10.8307 15.3718 10.4576 14.9987 9.9974 14.9987C9.53716 14.9987 9.16406 15.3718 9.16406 15.832C9.16406 16.2923 9.53716 16.6654 9.9974 16.6654Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                            </svg>
-                                        </div>
-                                        <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
+                                            <a href="#">Удалить</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="orders-pagination">
-                                <span class="orders-pagination__go-btn orders-pagination__go-btn--back">
-                                    Назад
-                                </span>
-                            <div class="orders-pagination__pages">
-                                <span data-active>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>...</span>
-                                <span>8</span>
-                                <span>9</span>
-                                <span>10</span>
-                            </div>
-                            <span class="orders-pagination__go-btn orders-pagination__go-btn--ahead">
-                                    Вперед
-                                </span>
+                        <div class="lk-managers__more">
+                            <a href="#" class="btn btn--l btn--blue">Показать ещё</a>
                         </div>
-                        <a href="#" class="orders-list__btn btn btn--l btn--blue">
-                            Посмотреть все
-                        </a>
                     </div>
                 </div>
             </div>
@@ -1412,6 +1184,40 @@
 
         </div>
     </section>
+    <template id="bdbd2">
+        <div class="modal-form">
+            <div class="modal-form__wrapper" data-replace-wrapper>
+                <div class="modal-form__title">Новый менеджер</div>
+                <form action="POST" class="form modal-form__form" data-form="new-manager">
+                    <div class="form-input form-input--required">
+                        <label for="fmr1">ФИО</label>
+                        <input id="fmr1" type="text" placeholder="Иванов Иван Иванович">
+                    </div>
+                    <div class="form-input form-input--mail">
+                        <label for="fmr2">Email</label>
+                        <input id="fmr2" type="text" placeholder="ivanomi@gmaol.com">
+                    </div>
+                    <div class="modal-form__buttons">
+                        <button type="submit" class="btn btn--l btn--blue">Отправить</button>
+                        <span class="btn btn--l btn--grey-line modal-close-btn">Отменить</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </template>
+    <template id="managerAdded">
+        <div class="result-modal">
+            <div class="result-modal__icon">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.9987 10.6666C20.2166 10.6666 10.6654 20.2178 10.6654 31.9999C10.6654 43.782 20.2166 53.3333 31.9987 53.3333C43.7808 53.3333 53.332 43.782 53.332 31.9999C53.332 20.2178 43.7808 10.6666 31.9987 10.6666ZM5.33203 31.9999C5.33203 17.2723 17.2711 5.33325 31.9987 5.33325C46.7263 5.33325 58.6654 17.2723 58.6654 31.9999C58.6654 46.7275 46.7263 58.6666 31.9987 58.6666C17.2711 58.6666 5.33203 46.7275 5.33203 31.9999ZM44.437 23.3402C45.5378 24.3186 45.6369 26.0041 44.6585 27.1049L30.4362 43.1049C29.9302 43.6742 29.2048 43.9999 28.4431 43.9999C27.6814 43.9999 26.9561 43.6742 26.4501 43.1049L19.3389 35.1049C18.3605 34.0041 18.4596 32.3186 19.5604 31.3402C20.6611 30.3617 22.3467 30.4609 23.3251 31.5616L28.4431 37.3194L40.6723 23.5616C41.6507 22.4609 43.3363 22.3617 44.437 23.3402Z"
+                          fill="#1eb2e8"></path>
+                </svg>
+            </div>
+            <div class="result-modal__title">Менеджер добавлен!</div>
+            <div class="result-modal__desc">Спасибо за уделенное время!</div>
+        </div>
+    </template>
+
 </main>
 <footer class="footer">
     <div class="container">

@@ -10,15 +10,19 @@
 "use strict";
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
 /* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
-/* harmony import */ var _js_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/header */ "./src/js/header.js");
-/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash/debounce */ "./node_modules/lodash/debounce.js");
-/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_debounce__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var js_circle_progress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! js-circle-progress */ "./node_modules/js-circle-progress/dist/circle-progress.js");
-/* harmony import */ var _js_catalog__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/catalog */ "./src/js/catalog.js");
-/* harmony import */ var _js_catalog__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_catalog__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _js_lk__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/lk */ "./src/js/lk.js");
-/* harmony import */ var _js_lk__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_lk__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var inputmask_lib_inputmask_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! inputmask/lib/inputmask.js */ "./node_modules/inputmask/lib/inputmask.js");
+/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! choices.js */ "./node_modules/choices.js/public/assets/scripts/choices.js");
+/* harmony import */ var choices_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(choices_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var choices_js_public_assets_styles_choices_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! choices.js/public/assets/styles/choices.min.css */ "./node_modules/choices.js/public/assets/styles/choices.min.css");
+/* harmony import */ var _js_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/header */ "./src/js/header.js");
+/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash/debounce */ "./node_modules/lodash/debounce.js");
+/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash_debounce__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var js_circle_progress__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! js-circle-progress */ "./node_modules/js-circle-progress/dist/circle-progress.js");
+/* harmony import */ var _js_catalog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/catalog */ "./src/js/catalog.js");
+/* harmony import */ var _js_catalog__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_catalog__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _js_profile__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/profile */ "./src/js/profile.js");
+/* harmony import */ var _js_lk__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/lk */ "./src/js/lk.js");
+/* harmony import */ var _js_lk__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_js_lk__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var inputmask_lib_inputmask_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! inputmask/lib/inputmask.js */ "./node_modules/inputmask/lib/inputmask.js");
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
@@ -31,10 +35,13 @@ __webpack_require__(/*! ./scss/styles.scss */ "./src/scss/styles.scss");
 
 
 
+
+
+
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Thumbs, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.FreeMode, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectCards, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFade, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Controller]);
 document.addEventListener("DOMContentLoaded", function (event) {
   var header = document.querySelector('.header');
-  new _js_header__WEBPACK_IMPORTED_MODULE_2__.SeasonsHeader(header);
+  new _js_header__WEBPACK_IMPORTED_MODULE_4__.SeasonsHeader(header);
   var inputs = document.querySelectorAll("input");
   inputs.forEach(function (input) {
     input.addEventListener("focus", function () {
@@ -245,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   var icons = document.querySelectorAll('.icon-pr');
   if (icons.length) {
     doProportionIcon(icons);
-    window.addEventListener('resize', lodash_debounce__WEBPACK_IMPORTED_MODULE_3___default()(function () {
+    window.addEventListener('resize', lodash_debounce__WEBPACK_IMPORTED_MODULE_5___default()(function () {
       doProportionIcon(icons);
     }, 300));
   }
@@ -271,104 +278,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     navigation: {
       prevEl: '.product-description__big-slider .seasons-nav__arrow--left',
       nextEl: '.product-description__big-slider .seasons-nav__arrow--right'
-    }
-  });
-  var modalSwitcher = function modalSwitcher() {
-    // v3 дописана динамическая вставка контейнера modals с оверлеем
-    var modalBackground = document.querySelector('.modals');
-    if (!modalBackground) {
-      modalBackground = document.createElement('div');
-      modalBackground.classList.add('modals');
-      document.querySelector('footer').prepend(modalBackground);
-    }
-    modalBackground = document.querySelector('.modals');
-    var body = document.querySelector('body');
-    var modal = null;
-    var renderModal = function renderModal(templateId) {
-      var template = document.querySelector("#".concat(templateId));
-      var item = template.content.cloneNode(true);
-      var wrapper = document.createElement('div');
-      var closeIcon = document.createElement('div');
-      closeIcon.classList.add('modal__close-button');
-      wrapper.appendChild(closeIcon);
-      wrapper.classList.add('modal');
-      wrapper.setAttribute('data-hidden', true);
-      wrapper.appendChild(item);
-      modalBackground.appendChild(wrapper);
-      setTimeout(function () {
-        wrapper.removeAttribute('data-hidden');
-      }, 100);
-      modal = wrapper;
-      var form = wrapper.querySelector('.form');
-      if (form) {
-        var validator = new FormValidator(form);
-        form.addEventListener('submit', function (e) {
-          validator.submit(function () {}, function () {
-            e.preventDefault();
-            e.stopImmediatePropagation();
-          });
-        });
-      }
-      closeIcon.addEventListener('click', closeModal);
-    };
-    var overlayOn = function overlayOn(_ref) {
-      var target = _ref.target;
-      if (!target.classList.contains('modal') && !target.closest('.modal')) {
-        closeModal();
-      }
-    };
-    var modalOpen = function modalOpen(item) {
-      var templateId = item.getAttribute('data-btn-modal');
-      if (document.querySelector("#".concat(templateId))) {
-        modalBackground.classList.add('modals--active');
-        body.classList.add('lock');
-        renderModal(templateId);
-        document.addEventListener('click', overlayOn);
-      }
-    };
-    var closeModal = function closeModal() {
-      modal.setAttribute('data-hidden', true);
-      document.removeEventListener('click', overlayOn);
-      setTimeout(function () {
-        modalBackground.classList.remove('modals--active');
-        modal.parentNode.removeChild(modal);
-      }, 100);
-    };
-    var openButtons = document.querySelectorAll('[data-btn-modal]');
-    if (openButtons.length) {
-      var _iterator5 = _createForOfIteratorHelper(openButtons),
-        _step5;
-      try {
-        var _loop2 = function _loop2() {
-          var item = _step5.value;
-          item.addEventListener('click', function (evt) {
-            if (item.hasAttribute('data-btn-modal')) {
-              evt.preventDefault();
-              evt.stopImmediatePropagation();
-              modalOpen(item);
-            }
-          });
-        };
-        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-          _loop2();
-        }
-      } catch (err) {
-        _iterator5.e(err);
-      } finally {
-        _iterator5.f();
-      }
-    }
-  };
-  modalSwitcher();
-  var reviewSuccess = "<div class=\"result-modal\">\n            <div class=\"result-modal__icon\">\n            <svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M31.9987 10.6666C20.2166 10.6666 10.6654 20.2178 10.6654 31.9999C10.6654 43.782 20.2166 53.3333 31.9987 53.3333C43.7808 53.3333 53.332 43.782 53.332 31.9999C53.332 20.2178 43.7808 10.6666 31.9987 10.6666ZM5.33203 31.9999C5.33203 17.2723 17.2711 5.33325 31.9987 5.33325C46.7263 5.33325 58.6654 17.2723 58.6654 31.9999C58.6654 46.7275 46.7263 58.6666 31.9987 58.6666C17.2711 58.6666 5.33203 46.7275 5.33203 31.9999ZM44.437 23.3402C45.5378 24.3186 45.6369 26.0041 44.6585 27.1049L30.4362 43.1049C29.9302 43.6742 29.2048 43.9999 28.4431 43.9999C27.6814 43.9999 26.9561 43.6742 26.4501 43.1049L19.3389 35.1049C18.3605 34.0041 18.4596 32.3186 19.5604 31.3402C20.6611 30.3617 22.3467 30.4609 23.3251 31.5616L28.4431 37.3194L40.6723 23.5616C41.6507 22.4609 43.3363 22.3617 44.437 23.3402Z\" fill=\"#1eb2e8\"></path>\n            </svg>\n            </div>\n            <div class=\"result-modal__title\">\u041E\u0442\u0437\u044B\u0432 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D!</div>\n            <div class=\"result-modal__desc\">\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u0443\u0434\u0435\u043B\u0435\u043D\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F!</div>\n        </div>";
-  document.querySelector('body').addEventListener('submit', function (evt) {
-    evt.preventDefault();
-    evt.stopImmediatePropagation();
-    var type = evt.target.getAttribute('data-form');
-    if (type === 'review') {
-      var tempContainer = document.createElement('div');
-      tempContainer.innerHTML = reviewSuccess;
-      evt.target.closest('.review-modal__wrapper').replaceWith(tempContainer.firstChild);
     }
   });
 
@@ -399,6 +308,39 @@ document.addEventListener("DOMContentLoaded", function (event) {
       type: 'bullets'
     }
   });
+  var choices = document.querySelectorAll('.auth-body__choose [name="form-type"]');
+  var choiceBoxes = document.querySelectorAll('.auth-body__choice[data-choice]');
+  if (choices.length > 0 && choiceBoxes.length > 0 && choices.length === choiceBoxes.length) {
+    choices.forEach(function (choice) {
+      if (choice.checked) {
+        for (var i = 0; i < choiceBoxes.length; i++) {
+          if (choiceBoxes[i].getAttribute('data-choice') === choice.value) {
+            choiceBoxes[i].setAttribute('data-choice-active', true);
+          } else {
+            choiceBoxes[i].removeAttribute('data-choice-active');
+          }
+        }
+      }
+      choice.addEventListener('change', function (evt) {
+        var id = evt.target.value;
+        for (var _i = 0; _i < choiceBoxes.length; _i++) {
+          if (choiceBoxes[_i].getAttribute('data-choice') === id) {
+            choiceBoxes[_i].setAttribute('data-choice-active', true);
+          } else {
+            choiceBoxes[_i].removeAttribute('data-choice-active');
+          }
+        }
+      });
+    });
+  }
+  var formSelectEls = document.querySelectorAll('.form-select select');
+  if (formSelectEls.length) {
+    formSelectEls.forEach(function (formSelectEl) {
+      new (choices_js__WEBPACK_IMPORTED_MODULE_2___default())(formSelectEl, {
+        searchEnabled: false
+      });
+    });
+  }
 });
 
 /***/ }),
@@ -528,6 +470,7 @@ var SeasonsHeader = /*#__PURE__*/function () {
     this._header = header;
     this._scrolledLogic = this._scrolledLogic.bind(this);
     this._clickOutCatalog = this._clickOutCatalog.bind(this);
+    this._clickOutBasket = this._clickOutBasket.bind(this);
     this._body = document.querySelector('body');
     this._burgerIcon = this._header.querySelector('.header__burger-icon');
     this._burger = this._header.querySelector('.header-burger');
@@ -535,7 +478,9 @@ var SeasonsHeader = /*#__PURE__*/function () {
     this._deliveryBox = this._header.querySelector('.delivery-box');
     this._main = document.querySelector('main');
     this._catalogBtn = this._header.querySelector('.header__catalog-btn');
+    this._basketBtn = this._header.querySelector('.header__basket-btn');
     this._catalog = this._header.querySelector('.header-catalog');
+    this._basket = this._header.querySelector('.header-basket');
     this._catalogCategories = this._header.querySelectorAll('[data-catalog-tab]');
     this._categoriesItems = new Map();
     this._addHandlers();
@@ -611,17 +556,34 @@ var SeasonsHeader = /*#__PURE__*/function () {
         }
       }, 100));
       window.addEventListener('scroll', this._scrolledLogic);
-      this._catalogBtn.addEventListener('click', function () {
-        if (!_this4._catalog.hasAttribute('data-animating')) {
-          _this4._catalog.setAttribute('data-animating', true);
-          if (_this4._catalog.hasAttribute('data-open')) {
-            _this4._closeCatalog();
-          } else {
-            _this4._openCatalog();
+      if (this._catalogBtn) {
+        this._catalogBtn.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          if (!_this4._catalog.hasAttribute('data-animating')) {
+            _this4._catalog.setAttribute('data-animating', true);
+            if (_this4._catalog.hasAttribute('data-open')) {
+              _this4._closeCatalog();
+            } else {
+              _this4._openCatalog();
+            }
+            _this4._catalog.removeAttribute('data-animating');
           }
-          _this4._catalog.removeAttribute('data-animating');
-        }
-      });
+        });
+      }
+      if (this._basketBtn) {
+        this._basketBtn.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          if (!_this4._basket.hasAttribute('data-animating')) {
+            _this4._basket.setAttribute('data-animating', true);
+            if (_this4._basket.hasAttribute('data-open')) {
+              _this4._closeBasket();
+            } else {
+              _this4._openBasket();
+            }
+            _this4._basket.removeAttribute('data-animating');
+          }
+        });
+      }
       this._catalogCategories.forEach(function (cat, ind) {
         var id = cat.getAttribute('data-catalog-tab');
         var subCat = _this4._header.querySelector("[data-catalog-box=\"".concat(id, "\"]"));
@@ -729,6 +691,15 @@ var SeasonsHeader = /*#__PURE__*/function () {
       this._body.classList.remove('overlayed');
       this._closeAllSubCategories();
       this._openFirstCategory();
+      document.removeEventListener('click', this._clickOutCatalog);
+    }
+  }, {
+    key: "_closeBasket",
+    value: function _closeBasket() {
+      this._basket.removeAttribute('data-open');
+      this._basketBtn.removeAttribute('data-active');
+      this._body.classList.remove('overlayed');
+      document.removeEventListener('click', this._clickOutBasket);
     }
   }, {
     key: "_clickOutCatalog",
@@ -741,12 +712,30 @@ var SeasonsHeader = /*#__PURE__*/function () {
       }
     }
   }, {
+    key: "_clickOutBasket",
+    value: function _clickOutBasket(_ref3) {
+      var target = _ref3.target;
+      if (!this._catalog.hasAttribute('data-animating')) {
+        if (!target.classList.contains('header') && !target.closest('header')) {
+          this._closeBasket();
+        }
+      }
+    }
+  }, {
     key: "_openCatalog",
     value: function _openCatalog() {
       this._catalog.setAttribute('data-open', true);
       this._catalogBtn.setAttribute('data-active', true);
       this._body.classList.add('overlayed');
       document.addEventListener('click', this._clickOutCatalog);
+    }
+  }, {
+    key: "_openBasket",
+    value: function _openBasket() {
+      this._basket.setAttribute('data-open', true);
+      this._basketBtn.setAttribute('data-active', true);
+      this._body.classList.add('overlayed');
+      document.addEventListener('click', this._clickOutBasket);
     }
   }, {
     key: "_alignHeader",
@@ -830,6 +819,79 @@ if (orderSettingBoxes.length) {
 
 /***/ }),
 
+/***/ "./src/js/profile.js":
+/*!***************************!*\
+  !*** ./src/js/profile.js ***!
+  \***************************/
+/***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  var filterBoxes = document.querySelectorAll('.filter-sort');
+  if (filterBoxes) {
+    filterBoxes.forEach(function (filterBox) {
+      var filterBoxTop = filterBox.querySelector('.filter-sort__current');
+      var filterBoxList = filterBox.querySelector('.filter-sort__body');
+      var clickOutBoxHandler = function clickOutBoxHandler(_ref) {
+        var target = _ref.target;
+        if (!target.classList.contains('filter-sort') && !target.closest('.filter-sort')) {
+          filterBoxList.removeAttribute('data-active');
+          document.removeEventListener('click', clickOutBoxHandler);
+        }
+      };
+      filterBoxTop.addEventListener('click', function (evt) {
+        if (filterBoxList.getAttribute('data-active')) {
+          filterBoxList.removeAttribute('data-active');
+          document.removeEventListener('click', clickOutBoxHandler);
+        } else {
+          filterBoxes.forEach(function (flBox) {
+            var flBoxList = flBox.querySelector('.filter-sort__body');
+            flBoxList.removeAttribute('data-active');
+          });
+          filterBoxList.setAttribute('data-active', true);
+          document.addEventListener('click', clickOutBoxHandler);
+        }
+      });
+      var checkboxes = _toConsumableArray(filterBox.querySelectorAll('input[type="checkbox"]'));
+      var atLeastOneChecked = false;
+      atLeastOneChecked = checkboxes.find(function (el) {
+        return el.checked === true;
+      });
+      if (!!atLeastOneChecked) {
+        filterBox.setAttribute('data-inner-checked', true);
+      } else {
+        filterBox.removeAttribute('data-inner-checked');
+      }
+      filterBox.addEventListener('change', function (evt) {
+        var checkboxes = _toConsumableArray(filterBox.querySelectorAll('input[type="checkbox"]'));
+        var atLeastOneChecked = false;
+        atLeastOneChecked = checkboxes.find(function (el) {
+          return el.checked === true;
+        });
+        if (!!atLeastOneChecked) {
+          filterBox.setAttribute('data-inner-checked', true);
+        } else {
+          filterBox.removeAttribute('data-inner-checked');
+        }
+      });
+    });
+  }
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".orders-services__filters .swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 12
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/utils.js":
 /*!*************************!*\
   !*** ./src/js/utils.js ***!
@@ -841,7 +903,7 @@ if (orderSettingBoxes.length) {
 /* harmony export */   slideDown: function() { return /* binding */ slideDown; },
 /* harmony export */   slideUp: function() { return /* binding */ slideUp; }
 /* harmony export */ });
-/* unused harmony exports slideToggle, modalSwitcher */
+/* unused harmony export slideToggle */
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
@@ -919,160 +981,50 @@ var slideToggle = function slideToggle(target) {
     return slideUp(target, duration);
   }
 };
-var modalSwitcher = function modalSwitcher() {
-  // v3 дописана динамическая вставка контейнера modals с оверлеем
-  var modalBackground = document.querySelector('.modals');
-  if (!modalBackground) {
-    modalBackground = document.createElement('div');
-    modalBackground.classList.add('modals');
-    document.querySelector('footer').prepend(modalBackground);
-  }
-  modalBackground = document.querySelector('.modals');
-  var body = document.querySelector('body');
-  var modals = document.querySelectorAll('.modal');
-  var _iterator = _createForOfIteratorHelper(modals),
+var accordeons = document.querySelectorAll('.faq-item');
+if (accordeons.length) {
+  var _iterator = _createForOfIteratorHelper(accordeons),
     _step;
   try {
+    var _loop = function _loop() {
+      var accordeon = _step.value;
+      var button = accordeon.querySelector('.faq-item__question');
+      button.addEventListener('click', function () {
+        var _iterator2 = _createForOfIteratorHelper(accordeons),
+          _step2;
+        try {
+          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+            var otherAccordeon = _step2.value;
+            if (otherAccordeon !== accordeon) {
+              otherAccordeon.classList.remove('faq-item--active');
+            }
+          }
+        } catch (err) {
+          _iterator2.e(err);
+        } finally {
+          _iterator2.f();
+        }
+        accordeon.classList.add('faq-item--active');
+      });
+    };
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var modal = _step.value;
-      if (!modalBackground.contains(modal)) {
-        modalBackground.appendChild(modal);
-      }
+      _loop();
     }
   } catch (err) {
     _iterator.e(err);
   } finally {
     _iterator.f();
   }
-  var modalOpen = function modalOpen(item) {
-    var _iterator2 = _createForOfIteratorHelper(modals),
-      _step2;
-    try {
-      for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-        var modal = _step2.value;
-        if (!modalBackground.contains(modal)) {
-          modalBackground.appendChild(modal);
-        }
-        if (modal.getAttribute('data-modal') === item.getAttribute('data-btn-modal')) {
-          modal.removeAttribute('data-hidden');
-        } else {
-          modal.setAttribute('data-hidden', '');
-        }
-      }
-    } catch (err) {
-      _iterator2.e(err);
-    } finally {
-      _iterator2.f();
-    }
-    modalBackground.classList.add('modals--active');
-    body.classList.add('lock');
-  };
-  var closeModals = function closeModals() {
-    var _iterator3 = _createForOfIteratorHelper(modals),
-      _step3;
-    try {
-      for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-        var modal = _step3.value;
-        modal.setAttribute('data-hidden', '');
-      }
-    } catch (err) {
-      _iterator3.e(err);
-    } finally {
-      _iterator3.f();
-    }
-    setTimeout(function () {
-      modalBackground.classList.remove('modals--active');
-      body.classList.remove('lock');
-    }, 300);
-  };
-  var openButtons = document.querySelectorAll('[data-btn-modal]');
-  if (openButtons.length) {
-    var _iterator4 = _createForOfIteratorHelper(openButtons),
-      _step4;
-    try {
-      var _loop = function _loop() {
-        var item = _step4.value;
-        item.addEventListener('click', function (evt) {
-          if (item.hasAttribute('data-btn-modal')) {
-            evt.preventDefault();
-            modalOpen(item);
-          }
-        });
-      };
-      for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-        _loop();
-      }
-    } catch (err) {
-      _iterator4.e(err);
-    } finally {
-      _iterator4.f();
-    }
-    var closeBtns = document.querySelectorAll('.modal__close-button');
-    var _iterator5 = _createForOfIteratorHelper(closeBtns),
-      _step5;
-    try {
-      for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-        var item = _step5.value;
-        item.addEventListener('click', function () {
-          closeModals();
-        });
-      }
-    } catch (err) {
-      _iterator5.e(err);
-    } finally {
-      _iterator5.f();
-    }
-    window.addEventListener('mousedown', function (e) {
-      if (!document.querySelector('.modal').contains(e.target) && e.target === modalBackground) {
-        closeModals();
-      }
-    });
-  }
-};
-var accordeons = document.querySelectorAll('.faq-item');
-if (accordeons.length) {
-  var _iterator6 = _createForOfIteratorHelper(accordeons),
-    _step6;
-  try {
-    var _loop2 = function _loop2() {
-      var accordeon = _step6.value;
-      var button = accordeon.querySelector('.faq-item__question');
-      button.addEventListener('click', function () {
-        var _iterator7 = _createForOfIteratorHelper(accordeons),
-          _step7;
-        try {
-          for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
-            var otherAccordeon = _step7.value;
-            if (otherAccordeon !== accordeon) {
-              otherAccordeon.classList.remove('faq-item--active');
-            }
-          }
-        } catch (err) {
-          _iterator7.e(err);
-        } finally {
-          _iterator7.f();
-        }
-        accordeon.classList.add('faq-item--active');
-      });
-    };
-    for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
-      _loop2();
-    }
-  } catch (err) {
-    _iterator6.e(err);
-  } finally {
-    _iterator6.f();
-  }
 }
 
 // faq-page
 var faqs = document.querySelectorAll('.faq-block');
 if (faqs.length) {
-  var _iterator8 = _createForOfIteratorHelper(faqs),
-    _step8;
+  var _iterator3 = _createForOfIteratorHelper(faqs),
+    _step3;
   try {
-    var _loop3 = function _loop3() {
-      var accordeon = _step8.value;
+    var _loop2 = function _loop2() {
+      var accordeon = _step3.value;
       var button = accordeon.querySelector('.faq-block__question');
       var answer = accordeon.querySelector('.faq-block__answer');
       button.addEventListener('click', function () {
@@ -1080,11 +1032,11 @@ if (faqs.length) {
           slideUp(answer, 300, function () {});
           accordeon.classList.remove('faq-block--active');
         } else {
-          var _iterator9 = _createForOfIteratorHelper(faqs),
-            _step9;
+          var _iterator4 = _createForOfIteratorHelper(faqs),
+            _step4;
           try {
-            for (_iterator9.s(); !(_step9 = _iterator9.n()).done;) {
-              var otherAccordeon = _step9.value;
+            for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+              var otherAccordeon = _step4.value;
               if (otherAccordeon !== accordeon) {
                 otherAccordeon.classList.remove('faq-block--active');
                 var otherAnswer = otherAccordeon.querySelector('.faq-block__answer');
@@ -1092,22 +1044,22 @@ if (faqs.length) {
               }
             }
           } catch (err) {
-            _iterator9.e(err);
+            _iterator4.e(err);
           } finally {
-            _iterator9.f();
+            _iterator4.f();
           }
           slideDown(answer, 300, function () {});
           accordeon.classList.add('faq-block--active');
         }
       });
     };
-    for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
-      _loop3();
+    for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+      _loop2();
     }
   } catch (err) {
-    _iterator8.e(err);
+    _iterator3.e(err);
   } finally {
-    _iterator8.f();
+    _iterator3.f();
   }
 }
 
@@ -1307,4 +1259,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.5480ebd2ba32aeff36a9.js.map
+//# sourceMappingURL=main.6d75ea4d6638099098e9.js.map

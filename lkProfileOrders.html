@@ -1017,8 +1017,103 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lk__orders-list orders-list">
-                        <div class="orders-list__title h2">Активные заказы</div>
+                    <div class="lk__orders-list orders-list orders-list--in-active">
+                        <div class="orders-list__title-block">
+                            <div class="orders-list__title h2">Активные заказы</div>
+                            <div class="orders-list__amount">
+                                34 активных заказа
+                            </div>
+                        </div>
+                        <div class="orders-list__services orders-services">
+                            <div class="orders-services__search">
+                                <form action="POST">
+                                    <div class="form-input form-input--m form-input--search">
+                                        <input type="text" placeholder="Поиск по товарам">
+                                        <button class="form-input__search-submit">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M8.5 2.5C5.18629 2.5 2.5 5.18629 2.5 8.5C2.5 11.8137 5.18629 14.5 8.5 14.5C11.8137 14.5 14.5 11.8137 14.5 8.5C14.5 5.18629 11.8137 2.5 8.5 2.5ZM1 8.5C1 4.35786 4.35786 1 8.5 1C12.6421 1 16 4.35786 16 8.5C16 10.301 15.3652 11.9536 14.3072 13.2465L18.7803 17.7197C19.0732 18.0126 19.0732 18.4874 18.7803 18.7803C18.4874 19.0732 18.0126 19.0732 17.7197 18.7803L13.2465 14.3072C11.9536 15.3652 10.301 16 8.5 16C4.35786 16 1 12.6421 1 8.5Z"
+                                                      fill="#6B7280"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="orders-services__filters">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="filter-sort">
+                                                <div class="filter-sort__body">
+                                                    <div class="filter-sort__item-to-choose form-input">
+                                                        <input id="appr1" type="checkbox" name="popularity"
+                                                               value="Подтвержден">
+                                                        <label for="appr1">Подтвержден</label>
+                                                    </div>
+                                                    <div class="filter-sort__item-to-choose form-input">
+                                                        <input id="canceled1" type="checkbox" name="popularity"
+                                                               value="Отмененен">
+                                                        <label for="canceled1">Отмененен</label>
+                                                    </div>
+                                                    <div class="filter-sort__item-to-choose form-input">
+                                                        <input id="sent1" type="checkbox" name="popularity"
+                                                               value="Отправлен">
+                                                        <label for="sent1">Отправлен</label>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-sort__current">Состояние заказа</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="filter-sort">
+                                                <div class="filter-sort__body">
+                                                    <div class="filter-sort__item-to-choose form-input">
+                                                        <input id="del1" type="checkbox" name="popularity"
+                                                               value="Подтвержден">
+                                                        <label for="del1">Доставка</label>
+                                                    </div>
+                                                    <div class="filter-sort__item-to-choose form-input">
+                                                        <input id="samv" type="checkbox" name="popularity"
+                                                               value="Отмененен">
+                                                        <label for="samv">Самовывоз</label>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-sort__current">Базис доставки</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="filter-sort">
+                                                <div class="filter-sort__body">
+                                                    <div class="filter-sort__item-to-choose form-input">
+                                                        <input id="pred231" type="checkbox" name="popularity"
+                                                               value="Предоплата отсрочка 40 дней">
+                                                        <label for="pred231">Отсрочка 40 дней </label>
+                                                    </div>
+                                                    <div class="filter-sort__item-to-choose form-input">
+                                                        <input id="pred23" type="checkbox" name="popularity"
+                                                               value="Предоплата отсрочка 40 дней">
+                                                        <label for="pred23">Предоплата 40 дней </label>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-sort__current">Условия оплаты</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--m btn--blue orders-services__new-order">
+                                <span class="btn__icon">
+                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M10 4C10.4142 4 10.75 4.33579 10.75 4.75V9.25012H15.25C15.6642 9.25012 16 9.58591 16 10.0001C16 10.4143 15.6642 10.7501 15.25 10.7501H10.75V15.25C10.75 15.6642 10.4142 16 10 16C9.58579 16 9.25 15.6642 9.25 15.25V10.7501H4.75C4.33579 10.7501 4 10.4143 4 10.0001C4 9.58591 4.33579 9.25012 4.75 9.25012H9.25V4.75C9.25 4.33579 9.58579 4 10 4Z"
+                                              fill="#F6F7F8"/>
+                                   </svg>
+                                </span>
+                                <span>Новый заказ</span>
+                            </a>
+                        </div>
                         <div class="orders-list__table orders-table">
                             <div class="orders-table__title-row order-row">
                                 <div class="order-row__id" data-sort-order="desc">

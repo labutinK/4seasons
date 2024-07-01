@@ -1017,335 +1017,179 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lk__orders-list orders-list">
-                        <div class="orders-list__title h2">Активные заказы</div>
-                        <div class="orders-list__table orders-table">
-                            <div class="orders-table__title-row order-row">
-                                <div class="order-row__id" data-sort-order="desc">
-                                    №
-                                </div>
-                                <div class="order-row__num" data-sort-order="desc">
-                                    Номер заказа
-                                </div>
-                                <div class="order-row__date" data-sort-order="asc">
-                                    Дата заказа
-                                </div>
-                                <div class="order-row__delivery-date" data-sort-order="asc">
-                                    Дата доставки
-                                </div>
-                                <div class="order-row__delivery-type" data-sort-order="asc">
-                                    Базис доставки
-                                </div>
-                                <div class="order-row__address" data-sort-order="asc">
-                                    Адрес поставки
-                                </div>
-                                <div class="order-row__conditions" data-sort-order="asc">
-                                    Условия оплаты
-                                </div>
-                                <div class="order-row__price" data-sort-order="asc">
-                                    Сумма с НДС
-                                </div>
-                                <div class="order-row__status" data-sort-order="asc">
-                                    Состояние заказа
-                                </div>
-                                <div class="order-row__additional"></div>
-                            </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
-                                </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
+                    <div class="lk__orders-list order-detail">
+                        <div class="order-detail__title h2">Информация по заказу</div>
+                        <div class="order-detail__wrapper">
+                            <div class="order-detail__main order-detail-main">
+                                <div class="order-detail-main__status">
                                     <div class="order-status order-status--approved">
                                         Подтвержден
                                     </div>
                                 </div>
-                                <div class="order-row__additional">
-                                    <div class="order-settings-box">
-                                        <div class="order-settings-box__icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.9974 10.832C10.4576 10.832 10.8307 10.4589 10.8307 9.9987C10.8307 9.53846 10.4576 9.16536 9.9974 9.16536C9.53716 9.16536 9.16406 9.53846 9.16406 9.9987C9.16406 10.4589 9.53716 10.832 9.9974 10.832Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 4.9987C10.4576 4.9987 10.8307 4.6256 10.8307 4.16536C10.8307 3.70513 10.4576 3.33203 9.9974 3.33203C9.53716 3.33203 9.16406 3.70513 9.16406 4.16536C9.16406 4.6256 9.53716 4.9987 9.9974 4.9987Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 16.6654C10.4576 16.6654 10.8307 16.2923 10.8307 15.832C10.8307 15.3718 10.4576 14.9987 9.9974 14.9987C9.53716 14.9987 9.16406 15.3718 9.16406 15.832C9.16406 16.2923 9.53716 16.6654 9.9974 16.6654Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                            </svg>
+                                <div class="order-detail-main__title">
+                                    № 7960-606997
+                                </div>
+                                <div class="order-detail-main__props">
+                                    <div class="order-detail-main__block">
+                                        <div class="order-detail-main__prop">
+                                            <span>Дата заказа</span>
+                                            <span>05.10.2023</span>
                                         </div>
-                                        <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
+                                        <div class="order-detail-main__prop">
+                                            <span>Дата выезда для базиса</span>
+                                            <span>05.09.2023</span>
                                         </div>
+                                        <div class="order-detail-main__prop">
+                                            <span>Дата доставки</span>
+                                            <span>05.10.2023</span>
+                                        </div>
+                                        <div class="order-detail-main__prop">
+                                            <span>Базис поставки</span>
+                                            <span>Категория CPT</span>
+                                        </div>
+                                    </div>
+                                    <div class="order-detail-main__block">
+                                        <div class="order-detail-main__prop">
+                                            <span>Кол-во товар. позиций</span>
+                                            <span>8</span>
+                                        </div>
+                                        <div class="order-detail-main__prop">
+                                            <span>Кол-во палет</span>
+                                            <span>3</span>
+                                        </div>
+                                        <div class="order-detail-main__prop">
+                                            <span>Кол-во коробок</span>
+                                            <span>8</span>
+                                        </div>
+                                        <div class="order-detail-main__prop">
+                                            <span>Общий объем</span>
+                                            <span>23</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-detail-main__progress order-progress">
+                                    <div class="order-progress__step order-progress__step--done">
+                                        <span class="order-progress__num">01</span>
+                                        <span class="order-progress__status">Заказ принят</span>
+                                    </div>
+                                    <div class="order-progress__step ">
+                                        <span class="order-progress__num">02</span>
+                                        <span class="order-progress__status">Заказ подтвержден</span>
+                                    </div>
+                                    <div class="order-progress__step">
+                                        <span class="order-progress__num">03</span>
+                                        <span class="order-progress__status">Заказ отгружен</span>
+                                    </div>
+                                    <div class="order-progress__step">
+                                        <span class="order-progress__num">04</span>
+                                        <span class="order-progress__status">Заказ доставлен</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
+                            <div class="order-detail__sum order-detail-sum">
+                                <div class="order-detail-sum__title">
+                                    <span>Итого</span>
+                                    <span>240 120 ₽ </span>
                                 </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
+                                <div class="order-detail-sum__box">
+                                    <div class="order-detail-sum__item">
+                                        <span class="order-detail-sum__name">Сумма с НДС:</span>
+                                        <span class="order-detail-sum__value">240 120 ₽</span>
                                     </div>
-                                </div>
-                                <div class="order-row__additional">
-                                    <div class="order-settings-box">
-                                        <div class="order-settings-box__icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.9974 10.832C10.4576 10.832 10.8307 10.4589 10.8307 9.9987C10.8307 9.53846 10.4576 9.16536 9.9974 9.16536C9.53716 9.16536 9.16406 9.53846 9.16406 9.9987C9.16406 10.4589 9.53716 10.832 9.9974 10.832Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 4.9987C10.4576 4.9987 10.8307 4.6256 10.8307 4.16536C10.8307 3.70513 10.4576 3.33203 9.9974 3.33203C9.53716 3.33203 9.16406 3.70513 9.16406 4.16536C9.16406 4.6256 9.53716 4.9987 9.9974 4.9987Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 16.6654C10.4576 16.6654 10.8307 16.2923 10.8307 15.832C10.8307 15.3718 10.4576 14.9987 9.9974 14.9987C9.53716 14.9987 9.16406 15.3718 9.16406 15.832C9.16406 16.2923 9.53716 16.6654 9.9974 16.6654Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                            </svg>
-                                        </div>
-                                        <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
-                                        </div>
+                                    <div class="order-detail-sum__item">
+                                        <span class="order-detail-sum__name">Сумма без НДС:</span>
+                                        <span class="order-detail-sum__value">180 120 ₽</span>
+                                    </div>
+                                    <div class="order-detail-sum__item">
+                                        <span class="order-detail-sum__name">Общий вес нетто:</span>
+                                        <span class="order-detail-sum__value">1 200 кг</span>
+                                    </div>
+                                    <div class="order-detail-sum__item">
+                                        <span class="order-detail-sum__name">Количество позиций:</span>
+                                        <span class="order-detail-sum__value">10</span>
+                                    </div>
+                                    <div class="order-detail-sum__item">
+                                        <span class="order-detail-sum__name">Количество коробок:</span>
+                                        <span class="order-detail-sum__value">100</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
+                            <div class="order-detail__table order-contains-table">
+                                <div class="contains-row contains-row--title">
+                                    <div class="contains-row__id">№</div>
+                                    <div class="contains-row__col">Название</div>
+                                    <div class="contains-row__col">Ед. изм.</div>
+                                    <div class="contains-row__col">Вес ед.</div>
+                                    <div class="contains-row__col">Кол-во в кор.</div>
+                                    <div class="contains-row__col">Ставка НДС</div>
+                                    <div class="contains-row__col">Цена с НДС</div>
+                                    <div class="contains-row__col">Заказано кор.</div>
+                                    <div class="contains-row__col">Вес нетто</div>
+                                    <div class="contains-row__col">Сумма с НДС</div>
                                 </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
+                                <div class="contains-row">
+                                    <div class="contains-row__id">1</div>
+                                    <div class="contains-row__col contains-row__col--title">
+                                        Брусника <span>, 400 г</span>
                                     </div>
+                                    <div class="contains-row__col" data-name="Ед. измерения">Кор.</div>
+                                    <div class="contains-row__col contains-row__col--weight">400 г</div>
+                                    <div class="contains-row__col" data-name="Кол-во в кор.">10</div>
+                                    <div class="contains-row__col" data-name="Ставка с НДС">10%</div>
+                                    <div class="contains-row__col" data-name="Цена с НДС">10 520</div>
+                                    <div class="contains-row__col" data-name="Заказано кор.">12</div>
+                                    <div class="contains-row__col" data-name="Вес нетто">230 кг</div>
+                                    <div class="contains-row__col" data-name="Сумма с НДС">1633 89,10</div>
                                 </div>
-                                <div class="order-row__additional">
-                                    <div class="order-settings-box">
-                                        <div class="order-settings-box__icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.9974 10.832C10.4576 10.832 10.8307 10.4589 10.8307 9.9987C10.8307 9.53846 10.4576 9.16536 9.9974 9.16536C9.53716 9.16536 9.16406 9.53846 9.16406 9.9987C9.16406 10.4589 9.53716 10.832 9.9974 10.832Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 4.9987C10.4576 4.9987 10.8307 4.6256 10.8307 4.16536C10.8307 3.70513 10.4576 3.33203 9.9974 3.33203C9.53716 3.33203 9.16406 3.70513 9.16406 4.16536C9.16406 4.6256 9.53716 4.9987 9.9974 4.9987Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 16.6654C10.4576 16.6654 10.8307 16.2923 10.8307 15.832C10.8307 15.3718 10.4576 14.9987 9.9974 14.9987C9.53716 14.9987 9.16406 15.3718 9.16406 15.832C9.16406 16.2923 9.53716 16.6654 9.9974 16.6654Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                            </svg>
-                                        </div>
-                                        <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
-                                        </div>
+                                <div class="contains-row">
+                                    <div class="contains-row__id">1</div>
+                                    <div class="contains-row__col contains-row__col--title">
+                                        Брусника <span>, 400 г</span>
                                     </div>
+                                    <div class="contains-row__col" data-name="Ед. измерения">Кор.</div>
+                                    <div class="contains-row__col contains-row__col--weight">400 г</div>
+                                    <div class="contains-row__col" data-name="Кол-во в кор.">10</div>
+                                    <div class="contains-row__col" data-name="Ставка с НДС">10%</div>
+                                    <div class="contains-row__col" data-name="Цена с НДС">10 520</div>
+                                    <div class="contains-row__col" data-name="Заказано кор.">12</div>
+                                    <div class="contains-row__col" data-name="Вес нетто">230 кг</div>
+                                    <div class="contains-row__col" data-name="Сумма с НДС">1633 89,10</div>
+                                </div>
+                                <div class="contains-row">
+                                    <div class="contains-row__id">1</div>
+                                    <div class="contains-row__col contains-row__col--title">
+                                        Брусника <span>, 400 г</span>
+                                    </div>
+                                    <div class="contains-row__col" data-name="Ед. измерения">Кор.</div>
+                                    <div class="contains-row__col contains-row__col--weight">400 г</div>
+                                    <div class="contains-row__col" data-name="Кол-во в кор.">10</div>
+                                    <div class="contains-row__col" data-name="Ставка с НДС">10%</div>
+                                    <div class="contains-row__col" data-name="Цена с НДС">10 520</div>
+                                    <div class="contains-row__col" data-name="Заказано кор.">12</div>
+                                    <div class="contains-row__col" data-name="Вес нетто">230 кг</div>
+                                    <div class="contains-row__col" data-name="Сумма с НДС">1633 89,10</div>
                                 </div>
                             </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
-                                </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
-                                    </div>
-                                </div>
-                                <div class="order-row__additional">
-                                    <div class="order-settings-box">
-                                        <div class="order-settings-box__icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.9974 10.832C10.4576 10.832 10.8307 10.4589 10.8307 9.9987C10.8307 9.53846 10.4576 9.16536 9.9974 9.16536C9.53716 9.16536 9.16406 9.53846 9.16406 9.9987C9.16406 10.4589 9.53716 10.832 9.9974 10.832Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 4.9987C10.4576 4.9987 10.8307 4.6256 10.8307 4.16536C10.8307 3.70513 10.4576 3.33203 9.9974 3.33203C9.53716 3.33203 9.16406 3.70513 9.16406 4.16536C9.16406 4.6256 9.53716 4.9987 9.9974 4.9987Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 16.6654C10.4576 16.6654 10.8307 16.2923 10.8307 15.832C10.8307 15.3718 10.4576 14.9987 9.9974 14.9987C9.53716 14.9987 9.16406 15.3718 9.16406 15.832C9.16406 16.2923 9.53716 16.6654 9.9974 16.6654Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                            </svg>
-                                        </div>
-                                        <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="order-row">
-                                <div class="order-row__id" data-name="Номер заказа">
-                                    32
-                                </div>
-                                <div class="order-row__num">
-                                    <a href="#">#6790-98779</a>
-                                </div>
-                                <div class="order-row__date" data-name="Дата заказа">
-                                    30.06.2023
-                                </div>
-                                <div class="order-row__delivery-date" data-name="Дата поставки">
-                                    10.07.2023
-                                </div>
-                                <div class="order-row__delivery-type" data-name="Базис доставки">
-                                    Доставка
-                                </div>
-                                <div class="order-row__address" data-name="Адрес поставки">
-                                    Империя вкуса,
-                                    г. Подольск, ул Мира
-                                </div>
-                                <div class="order-row__conditions" data-name="Условия оплаты">
-                                    Предоплата
-                                    отсрочка 40 дней
-                                </div>
-                                <div class="order-row__price" data-name="Сумма с НДС">
-                                    1633 89,10
-                                </div>
-                                <div class="order-row__status">
-                                    <div class="order-status order-status--approved">
-                                        Подтвержден
-                                    </div>
-                                </div>
-                                <div class="order-row__additional">
-                                    <div class="order-settings-box">
-                                        <div class="order-settings-box__icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.9974 10.832C10.4576 10.832 10.8307 10.4589 10.8307 9.9987C10.8307 9.53846 10.4576 9.16536 9.9974 9.16536C9.53716 9.16536 9.16406 9.53846 9.16406 9.9987C9.16406 10.4589 9.53716 10.832 9.9974 10.832Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 4.9987C10.4576 4.9987 10.8307 4.6256 10.8307 4.16536C10.8307 3.70513 10.4576 3.33203 9.9974 3.33203C9.53716 3.33203 9.16406 3.70513 9.16406 4.16536C9.16406 4.6256 9.53716 4.9987 9.9974 4.9987Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                                <path d="M9.9974 16.6654C10.4576 16.6654 10.8307 16.2923 10.8307 15.832C10.8307 15.3718 10.4576 14.9987 9.9974 14.9987C9.53716 14.9987 9.16406 15.3718 9.16406 15.832C9.16406 16.2923 9.53716 16.6654 9.9974 16.6654Z"
-                                                      stroke="#9CA5AD" stroke-width="1.66667" stroke-linecap="round"
-                                                      stroke-linejoin="round"/>
-                                            </svg>
-                                        </div>
-                                        <div class="order-settings-box__list">
-                                            <a href="#">Подробнее</a>
-                                            <a href="#">Отменить</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="order-detail__buttons">
+                                <a href="#" class="order-detail__go-back btn btn--l btn--grey-line">
+                                    <span class="btn__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9479 5.07935C16.2911 5.4389 16.2779 6.0086 15.9183 6.3518L10.0003 12.0008L15.9183 17.6498C16.2779 17.993 16.2911 18.5627 15.9479 18.9222C15.6047 19.2818 15.035 19.295 14.6754 18.9518L8.07545 12.6518C7.89753 12.482 7.79688 12.2467 7.79688 12.0008C7.79688 11.7548 7.89753 11.5196 8.07545 11.3498L14.6754 5.04976C15.035 4.70656 15.6047 4.71981 15.9479 5.07935Z" fill="#6B7280"/>
+                                        </svg>
+                                    </span>
+                                    <span>Назад</span>
+                                </a>
+                                <a href="#" class="btn btn--blue btn--l">
+                                    <span class="btn__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4726 2.45693C16.2779 1.65163 17.3701 1.19922 18.509 1.19922C20.8806 1.19922 22.8031 3.12176 22.8031 5.49333C22.8031 6.6322 22.3507 7.72442 21.5454 8.52973L7.53952 22.5356C7.37074 22.7044 7.14182 22.7992 6.90312 22.7992H2.10312C1.60607 22.7992 1.20312 22.3963 1.20312 21.8992V17.0992C1.20312 16.8605 1.29795 16.6316 1.46673 16.4628L15.4726 2.45693ZM18.509 2.99922C17.8475 2.99922 17.2131 3.26199 16.7454 3.72973L16.2759 4.19922L19.8031 7.72643L20.2726 7.25694C20.7404 6.7892 21.0031 6.15481 21.0031 5.49333C21.0031 4.11587 19.8865 2.99922 18.509 2.99922ZM18.5303 8.99922L15.0031 5.47201L3.00312 17.472V20.9992H6.53033L18.5303 8.99922Z" fill="#F6F7F8"/>
+                                        </svg>
+                                    </span>
+                                    <span>Редактировать</span>
+                                </a>
+                                <a href="#" class="order-detail__cancel btn btn--l btn--red">Отменить заказ</a>
                             </div>
                         </div>
-                        <div class="orders-pagination">
-                                <span class="orders-pagination__go-btn orders-pagination__go-btn--back">
-                                    Назад
-                                </span>
-                            <div class="orders-pagination__pages">
-                                <span data-active>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>...</span>
-                                <span>8</span>
-                                <span>9</span>
-                                <span>10</span>
-                            </div>
-                            <span class="orders-pagination__go-btn orders-pagination__go-btn--ahead">
-                                    Вперед
-                                </span>
-                        </div>
-                        <a href="#" class="orders-list__btn btn btn--l btn--blue">
-                            Посмотреть все
-                        </a>
                     </div>
                 </div>
             </div>
