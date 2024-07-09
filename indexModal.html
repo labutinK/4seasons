@@ -1706,7 +1706,8 @@
                                         Также, овощи и грибы могут удовлетворить потребность человека в различных
                                         питательных веществах, включая белки, углеводы и жиры.</p>
                                 </div>
-                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в раздел</a>
+                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в
+                                    раздел</a>
                                 <div class="section-products__photo">
                                     <img src="./img/section-photo.png" alt="">
                                 </div>
@@ -2344,7 +2345,8 @@
                                         Также, овощи и грибы могут удовлетворить потребность человека в различных
                                         питательных веществах, включая белки, углеводы и жиры.</p>
                                 </div>
-                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в раздел</a>
+                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в
+                                    раздел</a>
                                 <div class="section-products__photo">
                                     <img src="./img/section-photo.png" alt="">
                                 </div>
@@ -2982,7 +2984,8 @@
                                         Также, овощи и грибы могут удовлетворить потребность человека в различных
                                         питательных веществах, включая белки, углеводы и жиры.</p>
                                 </div>
-                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в раздел</a>
+                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в
+                                    раздел</a>
                                 <div class="section-products__photo">
                                     <img src="./img/section-photo.png" alt="">
                                 </div>
@@ -3620,7 +3623,8 @@
                                         Также, овощи и грибы могут удовлетворить потребность человека в различных
                                         питательных веществах, включая белки, углеводы и жиры.</p>
                                 </div>
-                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в раздел</a>
+                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в
+                                    раздел</a>
                                 <div class="section-products__photo">
                                     <img src="./img/section-photo.png" alt="">
                                 </div>
@@ -4258,7 +4262,8 @@
                                         Также, овощи и грибы могут удовлетворить потребность человека в различных
                                         питательных веществах, включая белки, углеводы и жиры.</p>
                                 </div>
-                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в раздел</a>
+                                <a href="./catalogSection.html" class="section-products__btn btn-underline">перейти в
+                                    раздел</a>
                                 <div class="section-products__photo">
                                     <img src="./img/section-photo.png" alt="">
                                 </div>
@@ -5557,6 +5562,62 @@
             </div>
         </div>
     </section>
+    <template id="delivery-modal">
+        <div class="modal-form">
+            <div class="modal-form__wrapper" data-replace-wrapper="">
+                <div class="modal-form__title">Новый менеджер</div>
+                <div class="delivery-box delivery-box--big">
+                    <button class="delivery-box__choice delivery-box__choice--active">
+                        Доставка
+                    </button>
+                    <button class="delivery-box__choice">
+                        Самовывоз
+                    </button>
+                </div>
+                <form action="POST" class="form modal-form__form" data-form="choose-delivery">
+                    <div class="form-input form-input--required"
+                         data-required="Поле обязательно"
+                         data-range="Поле обязательно"
+                    >
+                        <label for="addressInput">Адрес</label>
+                        <input id="addressInput" type="text" placeholder="Адрес">
+                    </div>
+                    <div class="modal-form__map">
+                        <div id="modal-map" style="height: 400px;"></div>
+                    </div>
+                    <div class="modal-form__buttons">
+                        <button type="submit" class="btn btn--l btn--blue">Отправить</button>
+                        <span class="btn btn--l btn--grey-line modal-close-btn">Отменить</span>
+                    </div>
+                </form>
+                <form action="POST" class="form modal-form__form" data-hidden data-form="choose-delivery2">
+                    <div class="form-input form-input--required"
+                         data-required="Поле обязательно"
+                         data-range="Поле обязательно"
+                    >
+                        <label for="addressInput">Адрес</label>
+                        <input id="addressInput2" type="text" placeholder="Адрес">
+                    </div>
+                    <div class="modal-form__buttons">
+                        <button type="submit" class="btn btn--l btn--blue">Отправить</button>
+                        <span class="btn btn--l btn--grey-line modal-close-btn">Отменить</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </template>
+    <template id="deliveryChoosed">
+        <div class="result-modal">
+            <div class="result-modal__icon">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.9987 10.6666C20.2166 10.6666 10.6654 20.2178 10.6654 31.9999C10.6654 43.782 20.2166 53.3333 31.9987 53.3333C43.7808 53.3333 53.332 43.782 53.332 31.9999C53.332 20.2178 43.7808 10.6666 31.9987 10.6666ZM5.33203 31.9999C5.33203 17.2723 17.2711 5.33325 31.9987 5.33325C46.7263 5.33325 58.6654 17.2723 58.6654 31.9999C58.6654 46.7275 46.7263 58.6666 31.9987 58.6666C17.2711 58.6666 5.33203 46.7275 5.33203 31.9999ZM44.437 23.3402C45.5378 24.3186 45.6369 26.0041 44.6585 27.1049L30.4362 43.1049C29.9302 43.6742 29.2048 43.9999 28.4431 43.9999C27.6814 43.9999 26.9561 43.6742 26.4501 43.1049L19.3389 35.1049C18.3605 34.0041 18.4596 32.3186 19.5604 31.3402C20.6611 30.3617 22.3467 30.4609 23.3251 31.5616L28.4431 37.3194L40.6723 23.5616C41.6507 22.4609 43.3363 22.3617 44.437 23.3402Z"
+                          fill="#1eb2e8"></path>
+                </svg>
+            </div>
+            <div class="result-modal__title">Доставка выбрана!</div>
+            <div class="result-modal__desc">Спасибо за уделенное время!</div>
+        </div>
+    </template>
 </main>
 
 <footer class="footer">

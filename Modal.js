@@ -51,9 +51,7 @@ var Modal = /*#__PURE__*/function () {
     });
     this._id = id;
     this._btn = document.querySelector("[data-btn-modal='".concat(id, "']"));
-    if (this._btn) {
-      this._template = document.querySelector("#".concat(id));
-    }
+    this._template = document.querySelector("#".concat(id));
     if (this._template) {
       this._overlayOn = this._overlayOn.bind(this);
       this._addLogic = function () {};
@@ -66,25 +64,31 @@ var Modal = /*#__PURE__*/function () {
       this._modalsBackground = document.querySelector('.modals');
       this._body = document.querySelector('body');
       this._modal = null;
-      this._btn.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        evt.stopImmediatePropagation();
-        _this._modalOpen();
-      });
+      if (this._btn) {
+        this._btn.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          evt.stopImmediatePropagation();
+          _this.modalOpen();
+        });
+      }
     }
   }
   _createClass(Modal, [{
     key: "setAdditionalLogicAfterSubmit",
     value: function setAdditionalLogicAfterSubmit(func) {
       this._addLogic = func;
+      return this;
     }
   }, {
-    key: "_modalOpen",
-    value: function _modalOpen() {
-      this._modalsBackground.classList.add('modals--active');
-      this._body.classList.add('lock');
-      this._renderModal(this._template);
-      document.addEventListener('click', this._overlayOn);
+    key: "modalOpen",
+    value: function modalOpen() {
+      if (this._template) {
+        this._modalsBackground.classList.add('modals--active');
+        this._body.classList.add('lock');
+        this._renderModal(this._template);
+        document.addEventListener('click', this._overlayOn);
+        return this;
+      }
     }
   }]);
   return Modal;

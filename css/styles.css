@@ -1729,6 +1729,9 @@ ol {
     font-size: 18px;
     line-height: 22px; }
 
+[data-hidden] {
+  display: none; }
+
 .header {
   position: relative;
   z-index: 10;
@@ -2181,6 +2184,17 @@ ol {
       cursor: auto; }
     .delivery-box__choice + .delivery-box__choice {
       margin-left: 12px; }
+  .delivery-box--big {
+    font-size: 16px;
+    line-height: 24.1px; }
+    .delivery-box--big .delivery-box__choice {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      padding: 11px; }
+      .delivery-box--big .delivery-box__choice--active {
+        background-color: #1EB2E8;
+        color: #fff; }
 
 .header-town-btn {
   position: relative;
